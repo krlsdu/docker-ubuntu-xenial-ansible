@@ -8,4 +8,4 @@ RUN apt-add-repository -y ppa:ansible/ansible && apt-get update -qq -y && apt-ge
     ansible \
  && rm -rf /var/lib/apt/lists/*
 
-RUN echo -e "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
+RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
