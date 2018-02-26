@@ -6,6 +6,8 @@ RUN apt-get update -qq -y && apt-get install -qq -y software-properties-common &
 
 RUN apt-get update -qq -y && apt-get install -qq -y python3-venv python3-pip && rm -rf /var/lib/apt/lists/*
 
+RUN pip install --upgrade pip
+
 RUN apt-add-repository -y ppa:ansible/ansible && apt-get update -qq -y && apt-get install -qq -y \
     ansible tar unzip \
  && rm -rf /var/lib/apt/lists/*
