@@ -4,7 +4,7 @@ MAINTAINER krlsdu <krlsdu@gmail.com>
 
 RUN apt-get update -qq -y && apt-get install -qq -y software-properties-common && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update -qq -y && apt-get install -qq -y python3-venv python3-pip vim && rm -rf /var/lib/apt/lists/*
+RUN apt-get update -qq -y && apt-get install -qq -y python3-venv python3-pip vim git && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip
 
